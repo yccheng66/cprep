@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
 int main(int argc, char ** argv) {
-  std::cout << "What's your name? ";
-  std::string name;
-  std::cin >> name;
-  std::cout << "hello, "<< name << "!" << std::endl;
+  cout << "What's your name? ";
+  string name;
+  cin >> name;
+  cout << "hello, "<< name << "!" << endl;
   return 0;
 }
