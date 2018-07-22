@@ -23,3 +23,10 @@ TEST (InnerProductTest, InnerProduct3D) {
   double ip = innerProduct(x1,y1,z1,x2,y2,z2);
   ASSERT_EQ(1, ip);
 }
+
+TEST (InnerProductTest, array) {
+  double u[] = {1, 0, 1};
+  double v[] = {1, 1, 1};
+  double ip = innerProduct(u, v, 3);
+  ASSERT_EQ(2, ip);
+}

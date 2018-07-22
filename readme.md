@@ -51,3 +51,4 @@ The problem is to write a program that asks the user to type in his/her name on 
   - binaries from source
   - git rm _binaries_
 - (Lan) Array: multiple variables of the same type
+  - memory model of variables and array of variables
