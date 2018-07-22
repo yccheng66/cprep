@@ -2,6 +2,7 @@
 #define INNER_PRODUCT_H
 
 #include <array>
+#include <math.h>
 
 double innerProduct(double x1, double y1, double x2, double y2) {
   return x1*x2 + y1*y2;
@@ -20,11 +21,25 @@ double innerProduct (double * const a, double * const & b, int n) {
 
 template<size_t n, size_t m>
 double innerProduct(std::array<double, n> a, std::array<double, m> b) {
-  if (n != m)
+  // if (n != m)
+  if (a.size() != b.size())
     throw std::string("error: diff dimension");
   double ip = 0;
   for (int i=0; i< n; i++)
     ip += a[i]*b[i];
   return ip;
+}
+
+template<size_t n>
+double length(std::array<double, n> a) {
+  double sumsq =0;
+  for (int i=0; i<a.size(); i++)
+    sumsq += a[i]*a[i];
+  return sqrt(sumsq);
+}
+
+template<size_t n, size_t m>
+double angle(std::array<double, n> a, std::array<double, m> b) {
+  return acos(innerProduct(a,b)/(length(a)*length(b)));
 }
 #endif

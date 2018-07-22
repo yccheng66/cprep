@@ -41,3 +41,17 @@ TEST(InnerProductTest, VectorObjectDiffDim) {
     ASSERT_EQ(std::string("error: diff dimension"), s);
   }
 }
+
+TEST(AngleTest, first) {
+  std::array<double , 2> u = {1, 0};
+  std::array<double , 2> v = {1, 1};
+  std::array<double , 2> w = {0, 1};
+  std::array<double , 2> x = {-1, 1};
+  std::array<double , 2> y = {-1, 0};
+  std::array<double , 2> z = {-1, -1};
+  ASSERT_NEAR(M_PI/4, angle(u,v), 0.0001);
+  ASSERT_NEAR(M_PI/2, angle(u,w), 0.0001);
+  ASSERT_NEAR(3*M_PI/4, angle(u,x), 0.0001);
+  ASSERT_NEAR(M_PI, angle(u,y), 0.0001);
+  ASSERT_NEAR(3*M_PI/4, angle(u,z), 0.0001);
+}
