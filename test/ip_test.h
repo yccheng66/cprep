@@ -24,3 +24,20 @@ TEST (InnerProductTest, array) {
   double ip = innerProduct(u, v, 3);
   ASSERT_EQ(2, ip);
 }
+
+TEST(InnerProductTest, VectorObject) {
+  std::array<double , 3> u = {1, 0, 1};
+  std::array<double , 3> v = {1, 1, 1};
+  double ip = innerProduct(u, v);
+  ASSERT_EQ(2, ip);
+}
+
+TEST(InnerProductTest, VectorObjectDiffDim) {
+  std::array<double , 3> u = {1, 0, 1};
+  std::array<double , 2> v = {1, 1};
+  try {
+    innerProduct(u, v);
+  } catch (std::string s) {
+    ASSERT_EQ(std::string("error: diff dimension"), s);
+  }
+}
