@@ -53,3 +53,7 @@ The problem is to write a program that asks the user to type in his/her name on 
 - (Lan) Array: multiple variables of the same type
   - memory model of variables and array of variables
   - separate tests from production
+  - main program: once only
+- (Eng) refactoring: extract function to cut duplicated code
+- (Lan) call by value (pointer) and call by reference
+  - digress: exchange
