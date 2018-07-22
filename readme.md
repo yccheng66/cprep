@@ -5,6 +5,7 @@ In a unix-like operating system, you could fire up a console application and typ
 The problem is to write a program that asks the user to type in his/her name on the _console input_, and print the string "Hello, <name>", where <name> is what the user previous typed for his/her name on the _console output_.
 
 ## Tasks (HTSI - plans)
+- (Eng) installing g++ for mac (xcode): xcode-select --install
 - (Eng) What is program in c/cpp?
   - computer, os, program (console app)
 - (Eng) Program
@@ -13,7 +14,7 @@ The problem is to write a program that asks the user to type in his/her name on 
 - (Eng) How do I type a cpp program?
  - atom, vi, vim, etc.
 - (Prog) How to write the main function?
-- ~~(Eng) How to build a program?~~
+- (Eng) How to build a program?
   - command line: g++
   - make and makefile
 - (Prog) How to print to console out?
@@ -31,7 +32,21 @@ The problem is to write a program that asks the user to type in his/her name on 
    - git add .
    - git commit -m "message"
    - git log --oneline
-   - git checkout <<version>>
+   - git checkout _commit_: checkout a previous commit
+   - git branch _branch_: create a new branch
+   - git checkout _branch_: switch to a branch
+   - git branch : show all branches
 - (Eng) How to test our program?
   - console output
   - unit tests with Google test
+  - installing google test
+  - data (given), operation (when), result (then)
+  - test driven development (TDD)
+- (Lan) How to write a function
+  - name, parameters, return type
+  - parameter passing: call by value
+  - overloading: inner products for 2d and 3d vectors
+- (Eng) Separations: more structure to your project
+  - production code from test
+  - binaries from source
+- (Lan) Array: multiple variables of the same type

@@ -1,6 +1,5 @@
 #include <gtest/gtest.h>
 
-using namespace std;
 int main(int argc, char ** argv) {
    testing :: InitGoogleTest( &argc , argv ) ;
    return RUN_ALL_TESTS( ) ;
@@ -11,8 +10,8 @@ int main(int argc, char ** argv) {
 #include <string>
 
 TEST (HelloTest, first) {
-  cout << "What's your name? ";
-  string name;
-  cin >> name;
-  cout << "hello, "<< name << "!" << endl;
+  std::cout << "What's your name? ";
+  std::string name;
+  std::cin >> name;
+  std::cout << "hello, "<< name << "!" << std::endl;
 }
