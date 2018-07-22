@@ -1,7 +1,9 @@
-all: hello ip
+all: dirs hello ip
 hello: hello.cpp
-	g++ hello.cpp -o hello -lgtest -lpthread
+	g++ hello.cpp -o bin/hello -lgtest -lpthread
 ip: ip.cpp
-	g++ ip.cpp -o ip -lgtest -lpthread
+	g++ ip.cpp -o bin/ip -lgtest -lpthread
 clean:
-	rm hello ip
+	rm -f bin/*
+dirs:
+	mkdir -p bin

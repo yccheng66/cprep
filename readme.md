@@ -47,6 +47,7 @@ The problem is to write a program that asks the user to type in his/her name on 
   - parameter passing: call by value
   - overloading: inner products for 2d and 3d vectors
 - (Eng) Separations: more structure to your project
-  - production code from test
+  - production code from test: use of header file
   - binaries from source
+  - git rm _binaries_
 - (Lan) Array: multiple variables of the same type

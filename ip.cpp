@@ -1,12 +1,5 @@
 #include <gtest/gtest.h>
-
-double innerProduct(double x1, double y1, double x2, double y2) {
-  return x1*x2 + y1*y2;
-}
-
-double innerProduct(double x1, double y1, double z1, double x2, double y2, double z2) {
-  return x1*x2 + y1*y2 + z1*z2;
-}
+#include "inner_product.h"
 
 int main(int argc, char ** argv) {
    testing :: InitGoogleTest( &argc , argv ) ;
