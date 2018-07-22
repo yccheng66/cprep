@@ -55,3 +55,9 @@ TEST(AngleTest, first) {
   ASSERT_NEAR(M_PI, angle(u,y), 0.0001);
   ASSERT_NEAR(3*M_PI/4, angle(u,z), 0.0001);
 }
+
+TEST(AngleTest, illegalDim) {
+  std::array<double , 2> u = {1, 0};
+  std::array<double , 3> v = {1, 1, 1};
+  ASSERT_ANY_THROW(angle(u,v));
+}

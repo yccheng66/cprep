@@ -57,3 +57,8 @@ The problem is to write a program that asks the user to type in his/her name on 
 - (Eng) refactoring: extract function to cut duplicated code
 - (Lan) call by value (pointer) and call by reference
   - digress: exchange
+- (Lan) C++ array for better dimension handling
+  - template
+  - template function
+  - exception handling
+  - angle between two vectors

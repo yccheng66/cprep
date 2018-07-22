@@ -9,3 +9,5 @@ clean:
 	rm -f bin/*
 dirs:
 	mkdir -p bin
+stat:
+	wc *.cpp *.h test/*
