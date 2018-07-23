@@ -38,6 +38,14 @@ double length(std::array<double, n> a) {
   return sqrt(sumsq);
 }
 
+template<size_t n>
+double length(std::array<double, n> a, std::array<double, n> b) {
+  double sumsq =0;
+  for (int i=0; i<a.size(); i++)
+    sumsq += (a[i]-b[i])*(a[i]-b[i]);
+  return sqrt(sumsq);
+}
+
 template<size_t n, size_t m>
 double angle(std::array<double, n> a, std::array<double, m> b) {
   return acos(innerProduct(a,b)/(length(a)*length(b)));

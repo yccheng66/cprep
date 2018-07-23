@@ -61,3 +61,12 @@ TEST(AngleTest, illegalDim) {
   std::array<double , 3> v = {1, 1, 1};
   ASSERT_ANY_THROW(angle(u,v));
 }
+
+TEST(LengthTest, twoVector) {
+  std::array<double , 2> u = {0, 0};
+  std::array<double , 2> v = {1, 0};
+  std::array<double , 2> w = {1, 1};
+  ASSERT_EQ(1, length(u,v));
+  ASSERT_EQ(1, length(v,w));
+  ASSERT_EQ(sqrt(2.0), length(w,u));
+}

@@ -5,23 +5,23 @@ In a unix-like operating system, you could fire up a console application and typ
 The problem is to write a program that asks the user to type in his/her name on the _console input_, and print the string "Hello, <name>", where <name> is what the user previous typed for his/her name on the _console output_.
 
 ## Tasks (HTSI - plans)
-- (Eng) installing g++ for mac (xcode): xcode-select --install
 - (Eng) What is program in c/cpp?
   - computer, os, program (console app)
 - (Eng) Program
   - source: what programmer writes in C/C++
   - binary: what computer runs, beginning with the entry point main
-- (Eng) How do I type a cpp program?
- - atom, vi, vim, etc.
-- (Prog) How to write the main function?
+  - installing g++ for mac (xcode): xcode-select --install
+  - editing a cpp program with atom, vi, vim, etc.
+- (Lan) What is the entry point of a cpp program
+  - How to write the main function?
 - (Eng) How to build a program?
   - command line: g++
   - make and makefile
-- (Prog) How to print to console out?
+- (Lan) How to print to console out?
   - console output (standard output stream): cout (c++)
   - stream insertion operator <<
   - standard library: std:cout
-- (Prog) How to read from console in?
+- (Lan) How to read from console in?
   - console input (standard input stream): cin (c++)
   - stream extraction operator >>
   - standard library: std:cin
@@ -36,6 +36,16 @@ The problem is to write a program that asks the user to type in his/her name on 
    - git branch _branch_: create a new branch
    - git checkout _branch_: switch to a branch
    - git branch : show all branches
+
+# Problem 2
+   Prompt the user to input two vectors. Compute the inner product (or dot product) of two vectors when it is defined. For example,
+       [1, 0] · [1, 1] = 1,
+       [1, 1, 0] · [0, 1, 1] = 1, and
+       [1,0] · [1,1,0] => undefined.
+   Prompt the user whether to continue or stop.
+
+## Tasks (HTSI - plans)
+
 - (Eng) How to test our program?
   - console output
   - unit tests with Google test
@@ -62,3 +72,9 @@ The problem is to write a program that asks the user to type in his/her name on 
   - template function
   - exception handling
   - angle between two vectors
+- (Lan) C++ Standard template library
+  - algorithms: sorting, searching, ...  
+  - containers: array, list, vector, map, ...
+- (Lan) C++ object: triangle
+  - data and function together
+  - constructor/destructor

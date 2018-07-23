@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "ip_test.h"
-#include "swap_test.h"
+// #include "swap_test.h"
+#include "triangle_test.h"
 
 int main(int argc, char ** argv) {
    testing :: InitGoogleTest( &argc , argv ) ;
