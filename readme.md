@@ -2,7 +2,7 @@
 
 In a unix-like operating system, you could fire up a console application and type a command. To do this you first run the console program. For example, in OSX, the console is launched with by running "term". Inside the console, you could run a program. For example, typing "date <ret>" gives you the current date. In this case, the program "date" is a system app located in directory /bin. You can also run a program you have previously built. For example, if the program "hello" in in your current directory, you run it by typing "./hello".
 
-The problem is to write a program that asks the user to type in his/her name on the _console input_, and print the string "Hello, <name>", where <name> is what the user previous typed for his/her name on the _console output_.
+The problem is to write a program that asks the user to type in his/her name on the _console input_, and print the string "Hello, _name_", where _name_ is what the user previous typed for his/her name on the _console output_.
 
 ## Tasks (HTSI - plans)
 - (Eng) What is program in c/cpp?
@@ -36,6 +36,8 @@ The problem is to write a program that asks the user to type in his/her name on 
    - git branch _branch_: create a new branch
    - git checkout _branch_: switch to a branch
    - git branch : show all branches
+   - git remote -v : show url of the remote
+   - git remote rm origin; rm .git/FETCH_HEAD : unlink local from remote
 
 # Problem 2
    Prompt the user to input two vectors. Compute the inner product (or dot product) of two vectors when it is defined. For example,
