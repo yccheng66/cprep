@@ -12,4 +12,4 @@ clean:
 dirs:
 	mkdir -p bin
 stat:
-	wc *.cpp *.h test/*
+	wc *.cpp *.h test/*  
