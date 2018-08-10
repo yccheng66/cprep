@@ -51,7 +51,7 @@ The problem is to write a program that asks the user to type in his/her name on 
 - (Eng) How to test our program?
   - console output
   - unit tests with Google test
-  - installing google test
+  - [installing google test](http://hack.limbicmedia.ca/installing-google-test/)
   - data (given), operation (when), result (then)
   - test driven development (TDD)
 - (Lan) How to write a function
