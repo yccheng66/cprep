@@ -1,3 +1,4 @@
+.PHONY: dirs clean stat
 CFLAGS=-std=c++11
 
 all: dirs bin/ip_test bin/hello bin/ip
@@ -12,4 +13,4 @@ clean:
 dirs:
 	mkdir -p bin
 stat:
-	wc *.cpp *.h test/*   
+	wc *.cpp *.h test/*

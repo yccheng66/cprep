@@ -1,8 +1,8 @@
 # Problem 1
 
-In a unix-like operating system, you could fire up a console application and type a command. To do this you first run the console program. For example, in OSX, the console is launched with by running "term". Inside the console, you could run a program. For example, typing "date <ret>" gives you the current date. In this case, the program "date" is a system app located in directory /bin. You can also run a program you have previously built. For example, if the program "hello" in in your current directory, you run it by typing "./hello".
+In a unix-like operating system (OS), you run a [_console application_](https://en.wikipedia.org/wiki/Console_application) by typing a command through the keyboard (or the _console input_) and viewing the result on the screen (or the _console output_). In macOS, you obtain the console by running _term_. Inside the console, you could run a program. For example, typing "date <ret\>" gives you the current date. In this case, the program "date" (and many others like "ls", "wc", etc.) is a system app located in directory /bin. You can also run a program you have previously built. For example, if the program "hello" in in your current directory, you run it by typing "./hello".
 
-The problem is to write a program that asks the user to type in his/her name on the _console input_, and print the string "Hello, _name_", where _name_ is what the user previous typed for his/her name on the _console output_.
+The problem is to build a console application _hello_ that asks the user to type in his/her name on the _console input_, and print the string "Hello, _name_" on the _console output_, where _name_ is what the user previous typed for his/her name.
 
 ## Tasks (HTSI - plans)
 - (Eng) What is program in c/cpp?
