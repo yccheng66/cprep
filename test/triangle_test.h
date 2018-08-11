@@ -1,4 +1,4 @@
-#include "../triangle.h"
+#include "../src/triangle.h"
 
 TEST(TraingleTest, first) {
   std::array<double, 2> a={0,0}, b={1,0}, c = {1,1};
