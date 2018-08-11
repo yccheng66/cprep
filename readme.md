@@ -7,11 +7,13 @@ The problem is to build a console application _hello_ that asks the user to type
 ## Tasks (HTSI - plans)
 - (Eng) What is program in c/cpp?
   - computer, os, program (console app)
-- (Eng) Program
+- (Eng) Program_
+  - binary: or executable, what computer runs; beginning with the entry point _main_
   - source: what programmer writes in C/C++
-  - binary: what computer runs, beginning with the entry point main
-  - installing g++ for mac (xcode): xcode-select --install
-  - editing a cpp program with atom, vi, vim, etc.
+  - build: converting from source to binary
+    - compiling and linking
+    - installing g++ for mac (xcode): xcode-select --install
+  - editing a cpp source program with atom, vi, vim, etc.
 - (Lan) What is the entry point of a cpp program
   - How to write the main function?
 - (Eng) How to build a program?
@@ -38,6 +40,7 @@ The problem is to build a console application _hello_ that asks the user to type
    - git branch : show all branches
    - git remote -v : show url of the remote
    - git remote rm origin; rm .git/FETCH_HEAD : unlink local from remote
+- (Lan) parameters to main arg count, arg vector 
 
 # Problem 2
    Prompt the user to input two vectors. Compute the inner product (or dot product) of two vectors when it is defined. For example,
