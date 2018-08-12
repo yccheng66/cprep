@@ -40,19 +40,22 @@ The problem is to build a console application _hello_ that asks the user to type
    - git branch : show all branches
    - git remote -v : show url of the remote
    - git remote rm origin; rm .git/FETCH_HEAD : unlink local from remote
-- (Lan) parameters to main arg count, arg vector 
+- (Lan) parameters to main arg count, arg vector
 
 # Problem 2
    Prompt the user to input two vectors. Compute the inner product (or dot product) of two vectors when it is defined. For example,
+
        [1, 0] · [1, 1] = 1,
        [1, 1, 0] · [0, 1, 1] = 1, and
        [1,0] · [1,1,0] => undefined.
+
    Prompt the user whether to continue or stop.
 
 ## Tasks (HTSI - plans)
 
+- (PSol) [_How To Solve It_](http://htsicpp.blogspot.com/2014/08/introducing-how-to-solve-it-cpp.html)
 - (Eng) How to test our program?
-  - console output
+  - console input/output
   - unit tests with Google test
   - [installing google test](http://hack.limbicmedia.ca/installing-google-test/)
   - data (given), operation (when), result (then)
