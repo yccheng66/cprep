@@ -66,4 +66,12 @@ double length(std::vector<double> const & v) {
     len += v[i]*v[i];
   return sqrt(len);
 }
+
+double area(std::vector<double> const & u, std::vector<double> const & v, std::vector<double> const & w) {
+  double a = length(v-u);
+  double b = length(w-v);
+  double c = length(u-w);
+  double s = (a+b+c)/2;
+  return sqrt(s*(s-a)*(s-b)*(s-c));
+}
 #endif
