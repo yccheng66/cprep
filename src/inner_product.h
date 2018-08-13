@@ -50,4 +50,20 @@ template<size_t n, size_t m>
 double angle(std::array<double, n> a, std::array<double, m> b) {
   return acos(innerProduct(a,b)/(length(a)*length(b)));
 }
+
+std::vector<double> operator - (std::vector<double> const & a, std::vector<double> const & b) {
+  if (a.size() != b.size())
+    throw std::string("dim error");
+  std::vector<double> r(a);
+  for (int i=0; i< a.size(); i++)
+    r[i] -= b[i];
+  return r;
+}
+
+double length(std::vector<double> const & v) {
+  double len = 0;
+  for (int i =0; i< v.size(); i++)
+    len += v[i]*v[i];
+  return sqrt(len);
+}
 #endif
