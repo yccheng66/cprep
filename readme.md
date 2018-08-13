@@ -22,12 +22,13 @@ The problem is to build a console application _hello_ that asks the user to type
 - (Lan) How to print to console out?
   - console output (standard output stream): cout (c++)
   - stream insertion operator <<
-  - standard library: std:cout
+  - standard library: std::cout
 - (Lan) How to read from console in?
   - console input (standard input stream): cin (c++)
   - stream extraction operator >>
-  - standard library: std:cin
+  - standard library: std::cin
   - string: std::string
+  - hello all!
 - (Eng) How to do version control with git?
    - git init
    - git status
